@@ -1,0 +1,474 @@
+{
+	"fields": "54",
+	"template": "<p style=\"text-align: center;\"><span style=\"font-size: 24px;\"><strong>\u5317\u4eac\u7f8e\u4fe1\u65f6\u4ee3\u79d1\u6280\u6709\u9650\u516c\u53f8\u53d1\u8d27\u7533\u8bf7\u8868<\/strong><\/span><\/p><p><span style=\"font-size: 24px;\"><strong><br\/><\/strong><\/span><\/p><p><span style=\"font-size: 24px;\"><\/span><\/p><table data-sort=\"sortDisabled\"><tbody><tr class=\"firstRow\"><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u7533\u8bf7\u90e8\u95e8<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"79\" valign=\"middle\" align=\"center\"><input name=\"data_1\" title=\"\u90e8\u95e8\" style=\"width: 80px;\" value=\"{macros}\" orgfontsize=\"\" orgtype=\"sys_dept\" orgwidth=\"80\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u7533\u8bf7\u4eba<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"79\" valign=\"middle\" align=\"center\"><input name=\"data_2\" title=\"\u7533\u8bf7\u4eba\" style=\"width: 70px;\" value=\"{macros}\" orgfontsize=\"\" orgtype=\"sys_realname\" orgwidth=\"70\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"88\" valign=\"middle\" align=\"center\">\u7533\u8bf7\u65e5\u671f<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"70\" valign=\"middle\" align=\"center\"><input name=\"data_3\" title=\"\u7533\u8bf7\u65e5\u671f\" style=\"width: 100px;\" value=\"{macros}\" orgtype=\"sys_date_cn\" orgwidth=\"100\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u5408\u540c\u7f16\u53f7<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"5\" valign=\"middle\" align=\"center\"><input name=\"data_4\" title=\"\u5408\u540c\u7f16\u53f7\" style=\"width: 100px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"100\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"296\" valign=\"middle\" align=\"center\">\u5408\u540c\u65e5\u671f<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"135\" valign=\"middle\" align=\"center\"><input name=\"data_5\" title=\"\u5408\u540c\u65e5\u671f\" style=\"width: 100px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"100\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u8d2d\u8d27\u5355\u4f4d<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"5\" valign=\"middle\" align=\"left\"><input name=\"data_6\" title=\"\u8d2d\u8d27\u5355\u4f4d\" style=\"width: 480px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"text\" orgwidth=\"480\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u4ee3\u7406\u5546<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"3\" valign=\"middle\" align=\"left\"><input name=\"data_7\" title=\"\u4ee3\u7406\u5546\" style=\"width: 260px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"260\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u6536\u8d27\u5730\u5740<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"7\" width=\"749\" valign=\"middle\" align=\"left\"><input name=\"data_8\" title=\"\u5730\u5740\" style=\"width: 620px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"620\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"296\" valign=\"middle\" align=\"center\">\u90ae\u7f16<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"135\" valign=\"middle\" align=\"center\"><input name=\"data_9\" title=\"\u90ae\u7f16\" style=\"width: 60px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"text\" orgwidth=\"60\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u6536\u8d27\u4eba<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"2\" valign=\"middle\" align=\"center\"><input name=\"data_40\" title=\"\u6536\u8d27\u4eba\" style=\"width: 150px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"150\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u8054\u7cfb\u7535\u8bdd<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"2\" valign=\"middle\" align=\"center\"><input name=\"data_41\" title=\"\u8054\u7cfb\u7535\u8bdd\" style=\"width: 150px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"150\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u90ae\u7bb1<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"3\" valign=\"middle\" align=\"center\"><input name=\"data_42\" title=\"\u90ae\u7bb1\" style=\"width: 150px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"email\" orgwidth=\"150\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" rowspan=\"1\" colspan=\"2\" valign=\"middle\" align=\"center\">\u4ea7\u54c1\u540d\u79f0<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">\u7248\u672c<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">\u8bbe\u5907\u6570\u91cf<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"88\" valign=\"middle\" align=\"center\">\u76d1\u6d4b\u70b9\u6570\u91cf<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"70\" valign=\"middle\" align=\"center\">\u5149\u76d8<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">\u52a0\u5bc6\u72d7<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" rowspan=\"1\" colspan=\"2\" width=\"19\" valign=\"middle\" align=\"center\">\u6388\u6743\u7c7b\u578b<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"135\" valign=\"middle\" align=\"center\"><p>\u9644\u52a0\u8bf4\u660e<\/p><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" rowspan=\"1\" colspan=\"2\" valign=\"middle\" align=\"center\"><span leipiplugins=\"select\"><select name=\"data_10\" title=\"\u4ea7\u54c1\u540d\u79f0\" style=\"width: 150px;\" size=\"1\" orgwidth=\"150\" leipiplugins=\"select\"><option value=\"CreCloud\u4e91\u7f51\u7ba1\">CreCloud\u4e91\u7f51\u7ba1<\/option><option selected=\"selected\" value=\"\u76d1\u63a7\u6613\u672c\u5730\u7248\">\u76d1\u63a7\u6613\u672c\u5730\u7248<\/option><option value=\"\u76d1\u63a7\u6613\u591aTS\u7248\">\u76d1\u63a7\u6613\u591aTS\u7248<\/option><\/select><br\/><\/span><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\"><select name=\"data_43\" title=\"\u7248\u672c\" style=\"width: 150px;\" size=\"1\" orgwidth=\"150\" leipiplugins=\"select\"><option selected=\"selected\" value=\"V3.2.0.0\">V3.2.0.0<\/option><option value=\"V3.2.0.1\">V3.2.0.1<\/option><option value=\"V3.3.0.0\">V3.3.0.0<\/option><option value=\"CreCloud\">CreCloud<\/option><\/select><br\/><\/td><td style=\"border-width: 1px; border-style: solid; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\"><input name=\"data_11\" title=\"\u6570\u91cf\" style=\"width: 40px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"40\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; background-color: rgb(224, 224, 224);\" width=\"88\" valign=\"middle\" align=\"center\"><input name=\"data_12\" title=\"\u76d1\u6d4b\u70b9\" style=\"width: 40px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"40\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; background-color: rgb(224, 224, 224);\" width=\"70\" valign=\"middle\" align=\"center\"><span leipiplugins=\"radios\" name=\"data_44\" title=\"\u5149\u76d8\"><input type=\"radio\" name=\"data_44\" value=\"\u6709\"  \/>\u6709&nbsp;<input type=\"radio\" name=\"data_44\" value=\"\u65e0\"  \/>\u65e0&nbsp;<\/span><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\"><span leipiplugins=\"radios\" name=\"data_45\" title=\"\u52a0\u5bc6\u72d7\"><input type=\"radio\" name=\"data_45\" value=\"\u6709\"  \/>\u6709&nbsp;<input type=\"radio\" name=\"data_45\" value=\"\u65e0\"  \/>\u65e0&nbsp;<\/span><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" rowspan=\"1\" colspan=\"2\" width=\"160\" valign=\"middle\" align=\"center\"><p><span leipiplugins=\"radios\" name=\"data_46\" title=\"\u6388\u6743\"><input type=\"radio\" name=\"data_r100\" value=\"SaaS\"  \/>SaaS&nbsp;<\/span><\/p><p><span leipiplugins=\"radios\" name=\"data_r101\" title=\"\u6388\u6743\"><input type=\"radio\" name=\"data_r101\" value=\"\u79df\u7528\"  \/>\u79df\u7528&nbsp;<\/span><\/p><p><span leipiplugins=\"radios\" name=\"data_46\" title=\"\u6388\u6743\"><input type=\"radio\" name=\"data_46\" value=\"\u4e70\u65ad\"  \/>\u4e70\u65ad&nbsp;<\/span><\/p><\/td><td style=\"border-width: 1px; border-style: solid; background-color: rgb(224, 224, 224);\" width=\"135\" valign=\"middle\" align=\"center\"><input name=\"data_47\" title=\"\u9644\u52a0\u8bf4\u660e\" style=\"width: 150px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"150\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u5408\u540c\u603b\u989d<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"79\" valign=\"middle\" align=\"center\"><input name=\"data_20\" title=\"\u5408\u540c\u603b\u989d\" style=\"width: 80px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"80\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u6c47\u6b3e\u65e5\u671f<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\"><input name=\"data_21\" title=\"\u4ed8\u6b3e\u65e5\u671f\" style=\"width: 80px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"80\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"88\" valign=\"middle\" align=\"center\">\u5df2\u4ed8\u6b3e<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"70\" valign=\"middle\" align=\"center\"><input name=\"data_22\" title=\"\u5df2\u4ed8\u6b3e\" style=\"width: 60px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"text\" orgwidth=\"60\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u4f59\u6b3e<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"5\" valign=\"middle\" align=\"center\"><input name=\"data_23\" title=\"\u4f59\u6b3e\" style=\"width: 60px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"60\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"296\" valign=\"middle\" align=\"center\">\u5c3e\u6b3e\u65e5\u671f<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"135\" valign=\"middle\" align=\"center\"><input name=\"data_24\" title=\"\u5c3e\u6b3e\u65e5\u671f\" style=\"width: 80px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"80\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u9500\u9879\u53d1\u7968<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"3\" valign=\"middle\" align=\"left\"><span leipiplugins=\"radios\" name=\"data_48\" title=\"\u53d1\u7968\"><input type=\"radio\" name=\"data_48\" value=\"\u5f00\u5177\"  \/>\u5f00\u5177&nbsp;<input type=\"radio\" name=\"data_48\" value=\"\u4e0d\u5f00\u5177\"  \/>\u4e0d\u5f00\u5177&nbsp;<\/span><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"88\" valign=\"middle\" align=\"center\">\u9001\u8d27\u65b9\u5f0f<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"5\" valign=\"middle\" align=\"center\"><span leipiplugins=\"radios\" name=\"data_49\" title=\"\u9001\u8d27\"><input type=\"radio\" name=\"data_49\" value=\"\u5feb\u9012\"  \/>\u5feb\u9012&nbsp;<input type=\"radio\" name=\"data_49\" value=\"\u9001\u8d27\u4e0a\u95e8\"  \/>\u9001\u8d27\u4e0a\u95e8&nbsp;<input type=\"radio\" name=\"data_49\" value=\"\u4e0d\u9700\u8981\"  \/>\u4e0d\u9700\u8981&nbsp;<\/span><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u968f\u8d27\u9644\u5e26<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"9\" valign=\"middle\" align=\"left\"><span leipiplugins=\"checkboxs\" name=\"data_50\" title=\"\u968f\u8d27\u9644\u5e26\"><input type=\"checkbox\" name=\"data_50\" value=\"\u8d28\u68c0\u5355\"  \/>\u8d28\u68c0\u5355&nbsp;<input type=\"checkbox\" name=\"data_50\" value=\"\u53d1\u8d27\u5355\"  \/>\u53d1\u8d27\u5355&nbsp;<input type=\"checkbox\" name=\"data_50\" value=\"\u4ea7\u54c1\u8d44\u6599\"  \/>\u4ea7\u54c1\u8d44\u6599&nbsp;<input type=\"checkbox\" name=\"data_50\" value=\"\u5176\u4ed6\"  \/>\u5176\u4ed6&nbsp;<\/span>&nbsp;&nbsp;&nbsp;<input name=\"data_34\" title=\"\u5176\u4ed6\" style=\"width: 500px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"text\" orgwidth=\"500\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" height=\"50\" align=\"center\">\u5907\u6ce8<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"9\" valign=\"middle\" height=\"50\" align=\"left\"><textarea name=\"data_35\" title=\"\u5907\u6ce8\" style=\"margin: 0px; width: 883px; height: 55px;\" orgheight=\"40\" orgfontsize=\"\" orgwidth=\"700\" leipiplugins=\"textarea\" orgrich=\"0\" value=\"\"><\/textarea><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">\u5546\u52a1\u90e8<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\"><input name=\"data_36\" title=\"\u5546\u52a1\" style=\"width: 60px;\" value=\"{macros}\" orgfontsize=\"\" orgtype=\"sys_realname\" orgwidth=\"60\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">\u8d22\u52a1\u90e8<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\"><input name=\"data_51\" title=\"\u8d22\u52a1\u90e8\" style=\"width: 150px;\" value=\"{macros}\" orgtype=\"sys_realname\" orgwidth=\"150\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">\u751f\u4ea7\u90e8<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\"><input name=\"data_52\" title=\"\u751f\u4ea7\u90e8\" style=\"width: 150px;\" value=\"{macros}\" orgtype=\"sys_realname\" orgwidth=\"150\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">\u4e3b\u7ba1\u9886\u5bfc<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"3\" valign=\"middle\" align=\"center\"><input name=\"data_53\" title=\"\u4e3b\u7ba1\u9886\u5bfc\" style=\"width: 150px;\" value=\"{macros}\" orgtype=\"sys_realname\" orgwidth=\"150\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/><\/td><\/tr><\/tbody><\/table><p><span style=\"font-size: 24px;\"><\/span><br\/><\/p>",
+	"parse": "<p style=\"text-align: center;\"><span style=\"font-size: 24px;\"><strong>\u5317\u4eac\u7f8e\u4fe1\u65f6\u4ee3\u79d1\u6280\u6709\u9650\u516c\u53f8\u53d1\u8d27\u7533\u8bf7\u8868<\/strong><\/span><\/p><p><span style=\"font-size: 24px;\"><strong><br\/><\/strong><\/span><\/p><p><span style=\"font-size: 24px;\"><\/span><\/p><table data-sort=\"sortDisabled\"><tbody><tr class=\"firstRow\"><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u7533\u8bf7\u90e8\u95e8<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"79\" valign=\"middle\" align=\"center\">{data_1}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u7533\u8bf7\u4eba<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"79\" valign=\"middle\" align=\"center\">{data_2}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"88\" valign=\"middle\" align=\"center\">\u7533\u8bf7\u65e5\u671f<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"70\" valign=\"middle\" align=\"center\">{data_3}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u5408\u540c\u7f16\u53f7<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"5\" valign=\"middle\" align=\"center\">{data_4}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"296\" valign=\"middle\" align=\"center\">\u5408\u540c\u65e5\u671f<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"135\" valign=\"middle\" align=\"center\">{data_5}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u8d2d\u8d27\u5355\u4f4d<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"5\" valign=\"middle\" align=\"left\">{data_6}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u4ee3\u7406\u5546<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"3\" valign=\"middle\" align=\"left\">{data_7}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u6536\u8d27\u5730\u5740<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"7\" width=\"749\" valign=\"middle\" align=\"left\">{data_8}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"296\" valign=\"middle\" align=\"center\">\u90ae\u7f16<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"135\" valign=\"middle\" align=\"center\">{data_9}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u6536\u8d27\u4eba<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"2\" valign=\"middle\" align=\"center\">{data_40}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u8054\u7cfb\u7535\u8bdd<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"2\" valign=\"middle\" align=\"center\">{data_41}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u90ae\u7bb1<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"3\" valign=\"middle\" align=\"center\">{data_42}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" rowspan=\"1\" colspan=\"2\" valign=\"middle\" align=\"center\">\u4ea7\u54c1\u540d\u79f0<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">\u7248\u672c<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">\u8bbe\u5907\u6570\u91cf<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"88\" valign=\"middle\" align=\"center\">\u76d1\u6d4b\u70b9\u6570\u91cf<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"70\" valign=\"middle\" align=\"center\">\u5149\u76d8<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">\u52a0\u5bc6\u72d7<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" rowspan=\"1\" colspan=\"2\" width=\"19\" valign=\"middle\" align=\"center\">\u6388\u6743\u7c7b\u578b<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"135\" valign=\"middle\" align=\"center\"><p>\u9644\u52a0\u8bf4\u660e<\/p><\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" rowspan=\"1\" colspan=\"2\" valign=\"middle\" align=\"center\"><span leipiplugins=\"select\">{data_10}<br\/><\/span><\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">{data_43}<br\/><\/td><td style=\"border-width: 1px; border-style: solid; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">{data_11}<\/td><td style=\"border-width: 1px; border-style: solid; background-color: rgb(224, 224, 224);\" width=\"88\" valign=\"middle\" align=\"center\">{data_12}<\/td><td style=\"border-width: 1px; border-style: solid; background-color: rgb(224, 224, 224);\" width=\"70\" valign=\"middle\" align=\"center\">{data_44}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" width=\"79\" valign=\"middle\" align=\"center\">{data_45}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all; background-color: rgb(224, 224, 224);\" rowspan=\"1\" colspan=\"2\" width=\"160\" valign=\"middle\" align=\"center\"><p>{data_46}<\/p><p>{data_r101}<\/p><p>{data_46}<\/p><\/td><td style=\"border-width: 1px; border-style: solid; background-color: rgb(224, 224, 224);\" width=\"135\" valign=\"middle\" align=\"center\">{data_47}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u5408\u540c\u603b\u989d<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"79\" valign=\"middle\" align=\"center\">{data_20}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u6c47\u6b3e\u65e5\u671f<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">{data_21}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"88\" valign=\"middle\" align=\"center\">\u5df2\u4ed8\u6b3e<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"70\" valign=\"middle\" align=\"center\">{data_22}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u4f59\u6b3e<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"5\" valign=\"middle\" align=\"center\">{data_23}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"296\" valign=\"middle\" align=\"center\">\u5c3e\u6b3e\u65e5\u671f<\/td><td style=\"border-width: 1px; border-style: solid;\" width=\"135\" valign=\"middle\" align=\"center\">{data_24}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u9500\u9879\u53d1\u7968<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"3\" valign=\"middle\" align=\"left\">{data_48}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"88\" valign=\"middle\" align=\"center\">\u9001\u8d27\u65b9\u5f0f<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"5\" valign=\"middle\" align=\"center\">{data_49}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" width=\"79\" valign=\"middle\" align=\"center\">\u968f\u8d27\u9644\u5e26<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"9\" valign=\"middle\" align=\"left\">{data_50}&nbsp;&nbsp;&nbsp;{data_34}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" height=\"50\" align=\"center\">\u5907\u6ce8<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"9\" valign=\"middle\" height=\"50\" align=\"left\">{data_35}<\/td><\/tr><tr><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">\u5546\u52a1\u90e8<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">{data_36}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">\u8d22\u52a1\u90e8<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">{data_51}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">\u751f\u4ea7\u90e8<\/td><td style=\"border-width: 1px; border-style: solid;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">{data_52}<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"1\" valign=\"middle\" align=\"center\">\u4e3b\u7ba1\u9886\u5bfc<\/td><td style=\"border-width: 1px; border-style: solid; -ms-word-break: break-all;\" rowspan=\"1\" colspan=\"3\" valign=\"middle\" align=\"center\">{data_53}<\/td><\/tr><\/tbody><\/table><p><span style=\"font-size: 24px;\"><\/span><br\/><\/p>",
+	"data": [{
+		"name": "data_1",
+		"title": "\u90e8\u95e8",
+		"style": "width: 80px;",
+		"value": "{macros}",
+		"orgfontsize": "",
+		"orgtype": "sys_dept",
+		"orgwidth": "80",
+		"orghide": "0",
+		"leipiplugins": "macros",
+		"type": "text",
+		"content": "<input name=\"data_1\" title=\"\u90e8\u95e8\" style=\"width: 80px;\" value=\"{macros}\" orgfontsize=\"\" orgtype=\"sys_dept\" orgwidth=\"80\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/>"
+	}, {
+		"name": "data_2",
+		"title": "\u7533\u8bf7\u4eba",
+		"style": "width: 70px;",
+		"value": "{macros}",
+		"orgfontsize": "",
+		"orgtype": "sys_realname",
+		"orgwidth": "70",
+		"orghide": "0",
+		"leipiplugins": "macros",
+		"type": "text",
+		"content": "<input name=\"data_2\" title=\"\u7533\u8bf7\u4eba\" style=\"width: 70px;\" value=\"{macros}\" orgfontsize=\"\" orgtype=\"sys_realname\" orgwidth=\"70\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/>"
+	}, {
+		"name": "data_3",
+		"title": "\u7533\u8bf7\u65e5\u671f",
+		"style": "width: 100px;",
+		"value": "{macros}",
+		"orgtype": "sys_date_cn",
+		"orgwidth": "100",
+		"orghide": "0",
+		"leipiplugins": "macros",
+		"type": "text",
+		"content": "<input name=\"data_3\" title=\"\u7533\u8bf7\u65e5\u671f\" style=\"width: 100px;\" value=\"{macros}\" orgtype=\"sys_date_cn\" orgwidth=\"100\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/>"
+	}, {
+		"name": "data_4",
+		"title": "\u5408\u540c\u7f16\u53f7",
+		"style": "width: 100px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "100",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_4\" title=\"\u5408\u540c\u7f16\u53f7\" style=\"width: 100px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"100\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_5",
+		"title": "\u5408\u540c\u65e5\u671f",
+		"style": "width: 100px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "100",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_5\" title=\"\u5408\u540c\u65e5\u671f\" style=\"width: 100px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"100\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_6",
+		"title": "\u8d2d\u8d27\u5355\u4f4d",
+		"style": "width: 480px; text-align: left;",
+		"value": "",
+		"orgmax": "",
+		"orgmin": "",
+		"orgheight": "",
+		"orgfontsize": "",
+		"orgtype": "text",
+		"orgwidth": "480",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_6\" title=\"\u8d2d\u8d27\u5355\u4f4d\" style=\"width: 480px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"text\" orgwidth=\"480\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_7",
+		"title": "\u4ee3\u7406\u5546",
+		"style": "width: 260px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "260",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_7\" title=\"\u4ee3\u7406\u5546\" style=\"width: 260px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"260\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_8",
+		"title": "\u5730\u5740",
+		"style": "width: 620px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "620",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_8\" title=\"\u5730\u5740\" style=\"width: 620px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"620\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_9",
+		"title": "\u90ae\u7f16",
+		"style": "width: 60px; text-align: left;",
+		"value": "",
+		"orgmax": "",
+		"orgmin": "",
+		"orgheight": "",
+		"orgfontsize": "",
+		"orgtype": "text",
+		"orgwidth": "60",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_9\" title=\"\u90ae\u7f16\" style=\"width: 60px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"text\" orgwidth=\"60\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_40",
+		"title": "\u6536\u8d27\u4eba",
+		"style": "width: 150px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "150",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_40\" title=\"\u6536\u8d27\u4eba\" style=\"width: 150px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"150\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_41",
+		"title": "\u8054\u7cfb\u7535\u8bdd",
+		"style": "width: 150px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "150",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_41\" title=\"\u8054\u7cfb\u7535\u8bdd\" style=\"width: 150px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"150\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_42",
+		"title": "\u90ae\u7bb1",
+		"style": "width: 150px; text-align: left;",
+		"value": "",
+		"orgmax": "",
+		"orgmin": "",
+		"orgheight": "",
+		"orgfontsize": "",
+		"orgtype": "email",
+		"orgwidth": "150",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_42\" title=\"\u90ae\u7bb1\" style=\"width: 150px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"email\" orgwidth=\"150\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_10",
+		"title": "\u4ea7\u54c1\u540d\u79f0",
+		"style": "width: 150px;",
+		"size": "1",
+		"orgwidth": "150",
+		"leipiplugins": "select",
+		"value": "CreCloud\u4e91\u7f51\u7ba1,\u76d1\u63a7\u6613\u672c\u5730\u7248,\u76d1\u63a7\u6613\u591aTS\u7248",
+		"selected": "selected",
+		"content": "<select name=\"data_10\" title=\"\u4ea7\u54c1\u540d\u79f0\" style=\"width: 150px;\" size=\"1\" orgwidth=\"150\" leipiplugins=\"select\"><option value=\"CreCloud\u4e91\u7f51\u7ba1\">CreCloud\u4e91\u7f51\u7ba1<\/option><option selected=\"selected\" value=\"\u76d1\u63a7\u6613\u672c\u5730\u7248\">\u76d1\u63a7\u6613\u672c\u5730\u7248<\/option><option value=\"\u76d1\u63a7\u6613\u591aTS\u7248\">\u76d1\u63a7\u6613\u591aTS\u7248<\/option><\/select>"
+	}, {
+		"name": "data_43",
+		"title": "\u7248\u672c",
+		"style": "width: 150px;",
+		"size": "1",
+		"orgwidth": "150",
+		"leipiplugins": "select",
+		"selected": "selected",
+		"value": "V3.2.0.0,V3.2.0.1,V3.3.0.0,CreCloud",
+		"content": "<select name=\"data_43\" title=\"\u7248\u672c\" style=\"width: 150px;\" size=\"1\" orgwidth=\"150\" leipiplugins=\"select\"><option selected=\"selected\" value=\"V3.2.0.0\">V3.2.0.0<\/option><option value=\"V3.2.0.1\">V3.2.0.1<\/option><option value=\"V3.3.0.0\">V3.3.0.0<\/option><option value=\"CreCloud\">CreCloud<\/option><\/select>"
+	}, {
+		"name": "data_11",
+		"title": "\u6570\u91cf",
+		"style": "width: 40px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "40",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_11\" title=\"\u6570\u91cf\" style=\"width: 40px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"40\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_12",
+		"title": "\u76d1\u6d4b\u70b9",
+		"style": "width: 40px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "40",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_12\" title=\"\u76d1\u6d4b\u70b9\" style=\"width: 40px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"40\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"leipiplugins": "radios",
+		"name": "data_44",
+		"title": "\u5149\u76d8",
+		"value": "\u6709,\u65e0",
+		"content": "<span leipiplugins=\"radios\" name=\"data_44\" title=\"\u5149\u76d8\"><input type=\"radio\" name=\"data_44\" value=\"\u6709\"  \/>\u6709&nbsp;<input type=\"radio\" name=\"data_44\" value=\"\u65e0\"  \/>\u65e0&nbsp;<\/span>",
+		"options": [{
+			"name": "data_44",
+			"value": "\u6709",
+			"type": "radio"
+		}, {
+			"name": "data_44",
+			"value": "\u65e0",
+			"type": "radio"
+		}]
+	}, {
+		"leipiplugins": "radios",
+		"name": "data_45",
+		"title": "\u52a0\u5bc6\u72d7",
+		"value": "\u6709,\u65e0",
+		"content": "<span leipiplugins=\"radios\" name=\"data_45\" title=\"\u52a0\u5bc6\u72d7\"><input type=\"radio\" name=\"data_45\" value=\"\u6709\"  \/>\u6709&nbsp;<input type=\"radio\" name=\"data_45\" value=\"\u65e0\"  \/>\u65e0&nbsp;<\/span>",
+		"options": [{
+			"name": "data_45",
+			"value": "\u6709",
+			"type": "radio"
+		}, {
+			"name": "data_45",
+			"value": "\u65e0",
+			"type": "radio"
+		}]
+	}, {
+		"leipiplugins": "radios",
+		"name": "data_46",
+		"title": "\u6388\u6743",
+		"value": "SaaS",
+		"content": "<span leipiplugins=\"radios\" name=\"data_46\" title=\"\u6388\u6743\"><input type=\"radio\" name=\"data_46\" value=\"SaaS\"  \/>SaaS&nbsp;<\/span>",
+		"options": [{
+			"name": "data_46",
+			"value": "SaaS",
+			"type": "radio"
+		}]
+	}, {
+		"leipiplugins": "radios",
+		"name": "data_r101",
+		"title": "\u6388\u6743",
+		"value": "\u79df\u7528",
+		"content": "<span leipiplugins=\"radios\" name=\"data_r101\" title=\"\u6388\u6743\"><input type=\"radio\" name=\"data_r101\" value=\"\u79df\u7528\"  \/>\u79df\u7528&nbsp;<\/span>",
+		"options": [{
+			"name": "data_r101",
+			"value": "\u79df\u7528",
+			"type": "radio"
+		}]
+	}, {
+		"leipiplugins": "radios",
+		"name": "data_r100",
+		"title": "\u6388\u6743",
+		"value": "\u4e70\u65ad",
+		"content": "<span leipiplugins=\"radios\" name=\"data_46\" title=\"\u6388\u6743\"><input type=\"radio\" name=\"data_46\" value=\"\u4e70\u65ad\"  \/>\u4e70\u65ad&nbsp;<\/span>",
+		"options": [{
+			"name": "data_46",
+			"value": "\u4e70\u65ad",
+			"type": "radio"
+		}]
+	}, {
+		"name": "data_47",
+		"title": "\u9644\u52a0\u8bf4\u660e",
+		"style": "width: 150px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "150",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_47\" title=\"\u9644\u52a0\u8bf4\u660e\" style=\"width: 150px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"150\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_20",
+		"title": "\u5408\u540c\u603b\u989d",
+		"style": "width: 80px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "80",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_20\" title=\"\u5408\u540c\u603b\u989d\" style=\"width: 80px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"80\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_21",
+		"title": "\u4ed8\u6b3e\u65e5\u671f",
+		"style": "width: 80px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "80",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_21\" title=\"\u4ed8\u6b3e\u65e5\u671f\" style=\"width: 80px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"80\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_22",
+		"title": "\u5df2\u4ed8\u6b3e",
+		"style": "width: 60px; text-align: left;",
+		"value": "",
+		"orgmax": "",
+		"orgmin": "",
+		"orgheight": "",
+		"orgfontsize": "",
+		"orgtype": "text",
+		"orgwidth": "60",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_22\" title=\"\u5df2\u4ed8\u6b3e\" style=\"width: 60px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"text\" orgwidth=\"60\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_23",
+		"title": "\u4f59\u6b3e",
+		"style": "width: 60px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "60",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_23\" title=\"\u4f59\u6b3e\" style=\"width: 60px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"60\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_24",
+		"title": "\u5c3e\u6b3e\u65e5\u671f",
+		"style": "width: 80px; text-align: left;",
+		"value": "",
+		"orgtype": "text",
+		"orgwidth": "80",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_24\" title=\"\u5c3e\u6b3e\u65e5\u671f\" style=\"width: 80px; text-align: left;\" value=\"\" orgtype=\"text\" orgwidth=\"80\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"leipiplugins": "radios",
+		"name": "data_48",
+		"title": "\u53d1\u7968",
+		"value": "\u5f00\u5177,\u4e0d\u5f00\u5177",
+		"content": "<span leipiplugins=\"radios\" name=\"data_48\" title=\"\u53d1\u7968\"><input type=\"radio\" name=\"data_48\" value=\"\u5f00\u5177\"  \/>\u5f00\u5177&nbsp;<input type=\"radio\" name=\"data_48\" value=\"\u4e0d\u5f00\u5177\"  \/>\u4e0d\u5f00\u5177&nbsp;<\/span>",
+		"options": [{
+			"name": "data_48",
+			"value": "\u5f00\u5177",
+			"type": "radio"
+		}, {
+			"name": "data_48",
+			"value": "\u4e0d\u5f00\u5177",
+			"type": "radio"
+		}]
+	}, {
+		"leipiplugins": "radios",
+		"name": "data_49",
+		"title": "\u9001\u8d27",
+		"value": "\u5feb\u9012,\u9001\u8d27\u4e0a\u95e8,\u4e0d\u9700\u8981",
+		"content": "<span leipiplugins=\"radios\" name=\"data_49\" title=\"\u9001\u8d27\"><input type=\"radio\" name=\"data_49\" value=\"\u5feb\u9012\"  \/>\u5feb\u9012&nbsp;<input type=\"radio\" name=\"data_49\" value=\"\u9001\u8d27\u4e0a\u95e8\"  \/>\u9001\u8d27\u4e0a\u95e8&nbsp;<input type=\"radio\" name=\"data_49\" value=\"\u4e0d\u9700\u8981\"  \/>\u4e0d\u9700\u8981&nbsp;<\/span>",
+		"options": [{
+			"name": "data_49",
+			"value": "\u5feb\u9012",
+			"type": "radio"
+		}, {
+			"name": "data_49",
+			"value": "\u9001\u8d27\u4e0a\u95e8",
+			"type": "radio"
+		}, {
+			"name": "data_49",
+			"value": "\u4e0d\u9700\u8981",
+			"type": "radio"
+		}]
+	}, {
+		"leipiplugins": "checkboxs",
+		"name": "data_50",
+		"title": "\u968f\u8d27\u9644\u5e26",
+		"value": "\u8d28\u68c0\u5355,\u53d1\u8d27\u5355,\u4ea7\u54c1\u8d44\u6599,\u5176\u4ed6",
+		"content": "<span leipiplugins=\"checkboxs\" name=\"data_50\" title=\"\u968f\u8d27\u9644\u5e26\"><input type=\"checkbox\" name=\"data_50\" value=\"\u8d28\u68c0\u5355\"  \/>\u8d28\u68c0\u5355&nbsp;<input type=\"checkbox\" name=\"data_50\" value=\"\u53d1\u8d27\u5355\"  \/>\u53d1\u8d27\u5355&nbsp;<input type=\"checkbox\" name=\"data_50\" value=\"\u4ea7\u54c1\u8d44\u6599\"  \/>\u4ea7\u54c1\u8d44\u6599&nbsp;<input type=\"checkbox\" name=\"data_50\" value=\"\u5176\u4ed6\"  \/>\u5176\u4ed6&nbsp;<\/span>",
+		"options": [{
+			"name": "data_50",
+			"value": "\u8d28\u68c0\u5355",
+			"type": "checkbox"
+		}, {
+			"name": "data_50",
+			"value": "\u53d1\u8d27\u5355",
+			"type": "checkbox"
+		}, {
+			"name": "data_50",
+			"value": "\u4ea7\u54c1\u8d44\u6599",
+			"type": "checkbox"
+		}, {
+			"name": "data_50",
+			"value": "\u5176\u4ed6",
+			"type": "checkbox"
+		}]
+	}, {
+		"name": "data_34",
+		"title": "\u5176\u4ed6",
+		"style": "width: 500px; text-align: left;",
+		"value": "",
+		"orgmax": "",
+		"orgmin": "",
+		"orgheight": "",
+		"orgfontsize": "",
+		"orgtype": "text",
+		"orgwidth": "500",
+		"orgalign": "left",
+		"orghide": "0",
+		"leipiplugins": "text",
+		"type": "text",
+		"content": "<input name=\"data_34\" title=\"\u5176\u4ed6\" style=\"width: 500px; text-align: left;\" value=\"\" orgmax=\"\" orgmin=\"\" orgheight=\"\" orgfontsize=\"\" orgtype=\"text\" orgwidth=\"500\" orgalign=\"left\" orghide=\"0\" leipiplugins=\"text\" type=\"text\"\/>"
+	}, {
+		"name": "data_35",
+		"title": "\u5907\u6ce8",
+		"style": "margin: 0px; width: 883px; height: 55px;",
+		"orgheight": "40",
+		"orgfontsize": "",
+		"orgwidth": "700",
+		"leipiplugins": "textarea",
+		"orgrich": "0",
+		"value": "",
+		"content": "<textarea name=\"data_35\" title=\"\u5907\u6ce8\" style=\"margin: 0px; width: 883px; height: 55px;\" orgheight=\"40\" orgfontsize=\"\" orgwidth=\"700\" leipiplugins=\"textarea\" orgrich=\"0\" value=\"\"><\/textarea>"
+	}, {
+		"name": "data_36",
+		"title": "\u5546\u52a1",
+		"style": "width: 60px;",
+		"value": "{macros}",
+		"orgfontsize": "",
+		"orgtype": "sys_realname",
+		"orgwidth": "60",
+		"orghide": "0",
+		"leipiplugins": "macros",
+		"type": "text",
+		"content": "<input name=\"data_36\" title=\"\u5546\u52a1\" style=\"width: 60px;\" value=\"{macros}\" orgfontsize=\"\" orgtype=\"sys_realname\" orgwidth=\"60\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/>"
+	}, {
+		"name": "data_51",
+		"title": "\u8d22\u52a1\u90e8",
+		"style": "width: 150px;",
+		"value": "{macros}",
+		"orgtype": "sys_realname",
+		"orgwidth": "150",
+		"orghide": "0",
+		"leipiplugins": "macros",
+		"type": "text",
+		"content": "<input name=\"data_51\" title=\"\u8d22\u52a1\u90e8\" style=\"width: 150px;\" value=\"{macros}\" orgtype=\"sys_realname\" orgwidth=\"150\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/>"
+	}, {
+		"name": "data_52",
+		"title": "\u751f\u4ea7\u90e8",
+		"style": "width: 150px;",
+		"value": "{macros}",
+		"orgtype": "sys_realname",
+		"orgwidth": "150",
+		"orghide": "0",
+		"leipiplugins": "macros",
+		"type": "text",
+		"content": "<input name=\"data_52\" title=\"\u751f\u4ea7\u90e8\" style=\"width: 150px;\" value=\"{macros}\" orgtype=\"sys_realname\" orgwidth=\"150\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/>"
+	}, {
+		"name": "data_53",
+		"title": "\u4e3b\u7ba1\u9886\u5bfc",
+		"style": "width: 150px;",
+		"value": "{macros}",
+		"orgtype": "sys_realname",
+		"orgwidth": "150",
+		"orghide": "0",
+		"leipiplugins": "macros",
+		"type": "text",
+		"content": "<input name=\"data_53\" title=\"\u4e3b\u7ba1\u9886\u5bfc\" style=\"width: 150px;\" value=\"{macros}\" orgtype=\"sys_realname\" orgwidth=\"150\" orghide=\"0\" leipiplugins=\"macros\" type=\"text\"\/>"
+	}],
+	"add_fields": []
+}

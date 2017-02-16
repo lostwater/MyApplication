@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.turtlejk.myapplication.MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="@drawable/stroke"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:id="@+id/mainlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:divider="@drawable/stroke"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="120px"
+                            android:layout_height="42px"
+                            android:layout_marginBottom="12px"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginRight="225px"
+                            android:layout_marginTop="40px"
+                            android:layout_weight="1"
+                            android:text="服务名称"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/servicename"
+                            android:layout_width="120px"
+                            android:layout_height="42px"
+                            android:layout_marginBottom="12px"
+                            android:layout_marginLeft="225px"
+                            android:layout_marginRight="30px"
+                            android:layout_marginTop="40px"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="招聘申请"
+                            android:textSize="30px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="120px"
+                            android:layout_height="42px"
+                            android:layout_marginBottom="12px"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginRight="318px"
+                            android:layout_marginTop="12px"
+                            android:layout_weight="1"
+                            android:text="服务编号"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/serviceid"
+                            android:layout_width="252px"
+                            android:layout_height="42px"
+                            android:layout_marginBottom="12px"
+                            android:layout_marginLeft="0px"
+                            android:layout_marginRight="30px"
+                            android:layout_marginTop="12px"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="20172234171444"
+                            android:textSize="30px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="90px"
+                            android:layout_height="42px"
+                            android:layout_marginBottom="40px"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginRight="270px"
+                            android:layout_marginTop="12px"
+                            android:layout_weight="1"
+                            android:text="优先级"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/pri"
+                            android:layout_width="60px"
+                            android:layout_height="42px"
+                            android:layout_marginBottom="40px"
+                            android:layout_marginLeft="270px"
+                            android:layout_marginRight="30px"
+                            android:layout_marginTop="12px"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="普通"
+                            android:textSize="30px" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F9F9F9">
+
+                    <TextView
+                        android:layout_width="112px"
+                        android:layout_height="40px"
+                        android:layout_marginBottom="16px"
+                        android:layout_marginLeft="32px"
+                        android:layout_marginRight="608px"
+                        android:layout_marginTop="30px"
+                        android:text="填写表单"
+                        android:textSize="28px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9F9F9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="112px"
+                    android:layout_height="40px"
+                    android:layout_marginBottom="16px"
+                    android:layout_marginLeft="32px"
+                    android:layout_marginRight="608px"
+                    android:layout_marginTop="30px"
+                    android:text="图片添加"
+                    android:textSize="28px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/myrecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="30px"
+                        android:background="#FFFFFF"
+                        android:choiceMode="singleChoice"
+                        android:divider="@null"
+                        android:fadingEdge="none"
+                        android:listSelector="@android:color/transparent"
+                        android:scrollbarStyle="outsideOverlay"
+                        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                        app:spanCount="4"
+                        tools:listitem="@layout/list_item_image" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F9F9F9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="112px"
+                        android:layout_height="40px"
+                        android:layout_marginBottom="16px"
+                        android:layout_marginLeft="32px"
+                        android:layout_marginRight="608px"
+                        android:layout_marginTop="30px"
+                        android:text="附件添加"
+                        android:textSize="28px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fileupload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="690px"
+                        android:layout_height="116px"
+                        android:layout_marginBottom="30px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="30px"
+                        android:id="@+id/addfile"
+                        android:background="@drawable/imagestroke">
+
+                        <ImageView
+                            android:layout_width="56px"
+                            android:layout_height="56px"
+                            android:layout_marginBottom="30px"
+                            android:layout_marginLeft="317px"
+                            android:layout_marginRight="317px"
+                            android:layout_marginTop="30px"
+                            android:src="@drawable/combinedshape" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/picturelinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F9F9F9"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/steppicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="30px"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="58px"
+                        android:layout_height="58px"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginLeft="158px"
+                        android:layout_marginRight="158px"
+                        android:layout_marginTop="30px"
+                        android:src="@drawable/group5" />
+
+                    <TextView
+                        android:layout_width="144px"
+                        android:layout_height="33px"
+                        android:layout_marginBottom="29px"
+                        android:layout_marginLeft="116px"
+                        android:layout_marginRight="114px"
+                        android:text="查看步骤信息"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/treepicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="30px"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="58px"
+                        android:layout_height="58px"
+                        android:layout_marginBottom="20px"
+                        android:layout_marginLeft="158px"
+                        android:layout_marginRight="158px"
+                        android:layout_marginTop="30px"
+                        android:src="@drawable/hierarchy" />
+
+                    <TextView
+                        android:layout_width="120px"
+                        android:layout_height="33px"
+                        android:layout_marginBottom="29px"
+                        android:layout_marginLeft="128px"
+                        android:layout_marginRight="126px"
+                        android:text="查看流程图"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="72px"
+                android:layout_height="50px"
+                android:layout_marginBottom="19px"
+                android:layout_marginLeft="338px"
+                android:layout_marginRight="338px"
+                android:layout_marginTop="19px"
+                android:background="@color/colorPrimary"
+                android:text="提交"
+                android:textColor="#FFFFFF"
+                android:textSize="36px" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

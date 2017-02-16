@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="#FFFFFF"
+        android:id="@+id/tosteppicture">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group5"
+            android:adjustViewBounds="true"
+            android:maxHeight="58px"
+            android:maxWidth="58px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="15px"/>
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="42px"
+            android:text="查看步骤信息"
+            android:textSize="30px"
+            android:layout_marginBottom="22px"
+            android:layout_marginRight="405px"
+            android:layout_marginTop="22px"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="16px"
+            android:layout_height="25px"
+            android:src="@drawable/hevron"
+            android:layout_marginBottom="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"/>
+    </LinearLayout>
+    <WebView
+        android:id="@+id/tree_webview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    </WebView>
+
+</LinearLayout>
