@@ -10,6 +10,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
 import android.support.annotation.RequiresApi;
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
     private List<ResultBean> resultbeanlist = new ArrayList<ResultBean>();
     private List<DataBean> databeanlist = new ArrayList<DataBean>();
     private LinearLayout mainlinearlayout;
+    private LinearLayout fileupload;
     private ArrayList<String> imagePaths = new ArrayList<>();
     private static final int REQUEST_CAMERA_CODE = 10;
     private static final int REQUEST_PREVIEW_CODE = 20;
@@ -98,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             WindowManager.LayoutParams localLayoutParams = getWindow().getAttributes();
             localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
         }
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
                     | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
@@ -141,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
         recyclerView.setLayoutManager(new GridLayoutManager(this, 4));
         recyclerView.setHasFixedSize(true);
         int space = 30;
-        int dpspace = px2dip(this,space);
+        int dpspace = px2dip(this, space);
         recyclerView.addItemDecoration(new SpacesItemDecoration(dpspace));
         recyclerView.setAdapter(adapter);
     }
@@ -198,12 +200,12 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             if (resultCode == RESULT_OK) {
                 Uri uri = data.getData();
                 GetPathFromUri4kitkat getPathFromUri = new GetPathFromUri4kitkat();
-                String path = getPathFromUri.getPath(MainActivity.this,uri);
+                String path = getPathFromUri.getPath(MainActivity.this, uri);
                 String type = getExtensionName(path);
                 String name = getFileName(path);
-                System.out.println("------------"+name);
+                System.out.println("------------" + name);
                 File file = new File(path);
-                System.out.println("------------"+file.toString());
+                System.out.println("------------" + file.toString());
                 long tempsize = 0;
                 try {
                     tempsize = getFileSize(file);
@@ -211,13 +213,13 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
                     e.printStackTrace();
                 }
                 String size = FormetFileSize(tempsize);
-                System.out.println("------------"+size);
-                int flag = creatAddfile(path,type,name,size);
-                if(flag == 1){
+                System.out.println("------------" + size);
+                int flag = creatAddfile(path, type, name, size);
+                if (flag == 1) {
                     addfilelist.add(file);
                 }
             }
-        }else if (resultCode == ImagePicker.RESULT_CODE_ITEMS) {
+        } else if (resultCode == ImagePicker.RESULT_CODE_ITEMS) {
             //添加图片返回
             if (data != null && requestCode == REQUEST_CODE_SELECT) {
                 ArrayList<ImageItem> images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_RESULT_ITEMS);
@@ -235,7 +237,7 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
         }
     }
 
-    View.OnClickListener stepOnClick = new View.OnClickListener(){
+    View.OnClickListener stepOnClick = new View.OnClickListener() {
 
         @Override
         public void onClick(View view) {
@@ -250,7 +252,7 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
         }
     };
 
-    View.OnClickListener treeOnClick = new View.OnClickListener(){
+    View.OnClickListener treeOnClick = new View.OnClickListener() {
 
         @Override
         public void onClick(View view) {
@@ -265,7 +267,7 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
         }
     };
 
-    View.OnClickListener addfileOnClick = new View.OnClickListener(){
+    View.OnClickListener addfileOnClick = new View.OnClickListener() {
 
         @Override
         public void onClick(View view) {
@@ -294,20 +296,18 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             //TextView pri = (TextView) findViewById(R.id.pri);
             JSONArray array = root.getJSONArray("data");
             System.out.println("------------------");
-            for (int i = 0;i < array.length();i++)
-            {
+            for (int i = 0; i < array.length(); i++) {
                 DataBean databean = new DataBean();
                 JSONObject dataobject = array.getJSONObject(i);
-                if("macros".equals(dataobject.getString("leipiplugins"))) {
-                        databean.setLeipiplugins("macros");
-                        databean.setType("text");
-                        databean.setValue("{macros." + dataobject.getString("orgtype") + "}");
-                        databean.setOrgtype(dataobject.getString("orgtype"));
-                        databean.setStyle(dataobject.getString("style"));
-                        databean.setOrgwidth(dataobject.getInt("orgwidth"));
-                        databean.setOrghide(dataobject.getString("orghide"));
-                }
-                else if("text".equals(dataobject.getString("leipiplugins"))) {
+                if ("macros".equals(dataobject.getString("leipiplugins"))) {
+                    databean.setLeipiplugins("macros");
+                    databean.setType("text");
+                    databean.setValue("{macros." + dataobject.getString("orgtype") + "}");
+                    databean.setOrgtype(dataobject.getString("orgtype"));
+                    databean.setStyle(dataobject.getString("style"));
+                    databean.setOrgwidth(dataobject.getInt("orgwidth"));
+                    databean.setOrghide(dataobject.getString("orghide"));
+                } else if ("text".equals(dataobject.getString("leipiplugins"))) {
                     databean.setLeipiplugins("text");
                     databean.setType("text");
                     databean.setValue(dataobject.getString("value"));
@@ -315,27 +315,24 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
                     databean.setStyle(dataobject.getString("style"));
                     databean.setOrgwidth(dataobject.getInt("orgwidth"));
                     databean.setOrghide(dataobject.getString("orghide"));
-                }
-                else if("textarea".equals(dataobject.getString("leipiplugins"))) {
+                } else if ("textarea".equals(dataobject.getString("leipiplugins"))) {
                     databean.setLeipiplugins("textarea");
                     databean.setValue(dataobject.getString("value"));
                     databean.setStyle(dataobject.getString("style"));
                     databean.setOrgwidth(dataobject.getInt("orgwidth"));
                     databean.setOrgheight(dataobject.getInt("orgheight"));
-                }
-                else if("select".equals(dataobject.getString("leipiplugins"))){
+                } else if ("select".equals(dataobject.getString("leipiplugins"))) {
                     databean.setLeipiplugins("select");
                     databean.setSelected("selected");
                     databean.setStyle(dataobject.getString("style"));
                     databean.setOrgwidth(dataobject.getInt("orgwidth"));
                     databean.setSize(dataobject.getInt("size"));
                     databean.setValue(dataobject.getString("value"));
-                }
-                else if("radios".equals(dataobject.getString("leipiplugins"))){
+                } else if ("radios".equals(dataobject.getString("leipiplugins"))) {
                     databean.setLeipiplugins("radios");
                     List<OptionBean> optionbeanlist = new ArrayList<OptionBean>();
                     JSONArray options = dataobject.getJSONArray("options");
-                    for(int m = 0;m < options.length();m++){
+                    for (int m = 0; m < options.length(); m++) {
                         JSONObject optionobject = options.getJSONObject(m);
                         OptionBean optionbean = new OptionBean();
                         optionbean.setName(optionobject.getString("name"));
@@ -345,12 +342,11 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
                     }
                     databean.setOptionBeanList(optionbeanlist);
                     databean.setValue(dataobject.getString("value"));
-                }
-                else if("checkboxs".equals(dataobject.getString("leipiplugins"))){
+                } else if ("checkboxs".equals(dataobject.getString("leipiplugins"))) {
                     databean.setLeipiplugins("checkboxs");
                     List<OptionBean> optionbeanlist = new ArrayList<OptionBean>();
                     JSONArray options = dataobject.getJSONArray("options");
-                    for(int m = 0;m < options.length();m++){
+                    for (int m = 0; m < options.length(); m++) {
                         JSONObject optionobject = options.getJSONObject(m);
                         OptionBean optionbean = new OptionBean();
                         optionbean.setName(optionobject.getString("name"));
@@ -370,22 +366,22 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             bfr.close();
             isr.close();//依次关闭流
             System.out.println("------------------");
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
-    public void  creatView(){
-        mainlinearlayout = (LinearLayout)findViewById(R.id.mainlinearlayout);
-        for (int i = 0;i < databeanlist.size();i++){
+    public void creatView() {
+        mainlinearlayout = (LinearLayout) findViewById(R.id.mainlinearlayout);
+        for (int i = 0; i < databeanlist.size(); i++) {
             creatwidget(databeanlist.get(i));
         }
     }
 
 
-    public void creatwidget(final DataBean databean){
+    public void creatwidget(final DataBean databean) {
         String leipiplugins = databean.getLeipiplugins();
         int firstmarginleftwidth = 30;
         int firstmargintopwidth = 20;
@@ -399,7 +395,7 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
         int ivmarginbottom = 30;
         int ivmarginright = 30;
         int linearheight = 88;
-        if("text".equals(leipiplugins)||"macros".equals(leipiplugins)){
+        if ("text".equals(leipiplugins) || "macros".equals(leipiplugins)) {
             LinearLayout root = new LinearLayout(this);
             root.setOrientation(LinearLayout.HORIZONTAL);
             root.setBackgroundColor(Color.WHITE);
@@ -411,14 +407,14 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             tv1.setId(View.generateViewId());
             String title = databean.getTitle();
             String regex = "[\u4e00-\u9fff]";
-            int count = (" " + title + " ").split (regex).length - 1;
+            int count = (" " + title + " ").split(regex).length - 1;
             int tvwidth = count * 34;
             int tempwidth = 136 - tvwidth;
-            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX,tvsize);
+            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, tvsize);
             tv1.setText(databean.getTitle());
             LinearLayout.LayoutParams tv1Params = new LinearLayout.LayoutParams(tvwidth, tvheight);
-            tv1Params.setMargins(firstmarginleftwidth,0,firstmarginrightwidth+tempwidth,firstmarginbottomwidth);
-            root.addView(tv1,tv1Params);
+            tv1Params.setMargins(firstmarginleftwidth, 0, firstmarginrightwidth + tempwidth, firstmarginbottomwidth);
+            root.addView(tv1, tv1Params);
 
             EditText et1 = new EditText(this);
             et1.setId(View.generateViewId());
@@ -426,14 +422,13 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             et1.setSingleLine(true);
             et1.setBackgroundResource(R.drawable.apptheme_textfield_default_holo_light);
             et1.setBackground(null);
-            et1.setTextSize(TypedValue.COMPLEX_UNIT_PX,34);
+            et1.setTextSize(TypedValue.COMPLEX_UNIT_PX, 24);
             LinearLayout.LayoutParams et1Params = new LinearLayout.LayoutParams(540, linearheight);
-            et1Params.setMargins(firstmarginleftwidth,0,0,20);
-            root.addView(et1,et1Params);
+            et1Params.setMargins(firstmarginleftwidth, 0, 0, 20);
+            root.addView(et1, et1Params);
 
-            mainlinearlayout.addView(root,rootParams);
-        }
-        else if("textarea".equals(leipiplugins)){
+            mainlinearlayout.addView(root, rootParams);
+        } else if ("textarea".equals(leipiplugins)) {
             LinearLayout root = new LinearLayout(this);
             root.setOrientation(LinearLayout.HORIZONTAL);
             root.setBackgroundColor(Color.WHITE);
@@ -444,30 +439,31 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             tv1.setId(View.generateViewId());
             String title = databean.getTitle();
             String regex = "[\u4e00-\u9fff]";
-            int count = (" " + title + " ").split (regex).length - 1;
+            int count = (" " + title + " ").split(regex).length - 1;
             int tvwidth = count * 34;
             int tempwidth = 136 - tvwidth;
-            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX,tvsize);
+            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, tvsize);
             tv1.setText(databean.getTitle());
             LinearLayout.LayoutParams tv1Params = new LinearLayout.LayoutParams(tvwidth, tvheight);
-            tv1Params.setMargins(firstmarginleftwidth,0,firstmarginrightwidth+tempwidth,82);
-            root.addView(tv1,tv1Params);
+            tv1Params.setMargins(firstmarginleftwidth, 0, firstmarginrightwidth + tempwidth, 82);
+            root.addView(tv1, tv1Params);
 
             EditText et1 = new EditText(this);
             et1.setId(View.generateViewId());
             String etvalue = databean.getValue();
-            int etcount = (" " + etvalue + " ").split (regex).length - 1;
+            int etcount = (" " + etvalue + " ").split(regex).length - 1;
             int etwidth = count * 34;
             et1.setText(databean.getValue());
             et1.setBackground(null);
             et1.setBackgroundResource(R.drawable.apptheme_textfield_default_holo_light);
+            et1.setTextSize(TypedValue.COMPLEX_UNIT_PX, tvsize);
+            et1.setBackgroundResource(R.drawable.apptheme_edit_text_holo_light);
             LinearLayout.LayoutParams et1Params = new LinearLayout.LayoutParams(540, linearheight);
-            et1Params.setMargins(firstmarginleftwidth,0,0,77);
-            root.addView(et1,et1Params);
+            et1Params.setMargins(firstmarginleftwidth, 0, 0, 77);
+            root.addView(et1, et1Params);
 
-            mainlinearlayout.addView(root,rootParams);
-        }
-        else if("select".equals(leipiplugins)){
+            mainlinearlayout.addView(root, rootParams);
+        } else if ("select".equals(leipiplugins)) {
             LinearLayout root = new LinearLayout(this);
             root.setOrientation(LinearLayout.HORIZONTAL);
             root.setBackgroundColor(Color.WHITE);
@@ -478,44 +474,40 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             tv1.setId(View.generateViewId());
             final String title = databean.getTitle();
             String regex = "[\u4e00-\u9fff]";
-            int count = (" " + title + " ").split (regex).length - 1;
+            int count = (" " + title + " ").split(regex).length - 1;
             int tvwidth = count * 34;
             int tempwidth = 136 - tvwidth;
-            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX,tvsize);
+            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, tvsize);
             tv1.setText(databean.getTitle());
             LinearLayout.LayoutParams tv1Params = new LinearLayout.LayoutParams(tvwidth, tvheight);
-            tv1Params.setMargins(firstmarginleftwidth,firstmargintopwidth,firstmarginrightwidth+tempwidth,firstmarginbottomwidth);
+            tv1Params.setMargins(firstmarginleftwidth, firstmargintopwidth, firstmarginrightwidth + tempwidth, firstmarginbottomwidth);
             tv1Params.weight = 0;
-            root.addView(tv1,tv1Params);
+            root.addView(tv1, tv1Params);
 
             final TextView tv2 = new TextView(this);
             tv2.setId(View.generateViewId());
 
-            if("selected".equals(databean.getSelected())){
+            if ("selected".equals(databean.getSelected())) {
                 String content = databean.getContent();
                 Pattern p = Pattern.compile("option selected=\"selected\" value=\"(.*?)\"");
                 Matcher m = p.matcher(content);
-                while(m.find()){
+                while (m.find()) {
                     String selectedvalue = m.group(1);
                     tv2.setText(selectedvalue);
                 }
             }
 
-            tv2.setOnClickListener(new View.OnClickListener()
-            {
+            tv2.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View arg0)
-                {
+                public void onClick(View arg0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setTitle(title);
                     //    指定下拉列表的显示数据
                     //    设置一个下拉的列表选择项
                     final String[] strArray = databean.getValue().split(",");
-                    builder.setItems(strArray, new DialogInterface.OnClickListener()
-                    {
+                    builder.setItems(strArray, new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialog, int which)
-                        {
+                        public void onClick(DialogInterface dialog, int which) {
                             tv2.setText(strArray[which]);
                         }
                     });
@@ -524,31 +516,27 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             });
             String value = tv2.getText().toString();
             String tv2regex = "[\u4e00-\u9fff]";
-            int tv2count = (" " + value + " ").split (regex).length - 1;
+            int tv2count = (" " + value + " ").split(regex).length - 1;
             int tv2width = count * 34;
-            tv2.setTextSize(TypedValue.COMPLEX_UNIT_PX,tvsize);
+            tv2.setTextSize(TypedValue.COMPLEX_UNIT_PX, tvsize);
             LinearLayout.LayoutParams tv2Params = new LinearLayout.LayoutParams(tv2width, tvheight);
             tv2Params.weight = 1;
-            tv2Params.setMargins(0,firstmargintopwidth,0,firstmarginbottomwidth);
-            root.addView(tv2,tv2Params);
+            tv2Params.setMargins(0, firstmargintopwidth, 0, firstmarginbottomwidth);
+            root.addView(tv2, tv2Params);
 
             ImageView iv1 = new ImageView(this);
             iv1.setImageResource(R.drawable.hevron);
-            iv1.setOnClickListener(new View.OnClickListener()
-            {
+            iv1.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View arg0)
-                {
+                public void onClick(View arg0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setTitle(title);
                     //    指定下拉列表的显示数据
                     //    设置一个下拉的列表选择项
                     final String[] strArray = databean.getValue().split(",");
-                    builder.setItems(strArray, new DialogInterface.OnClickListener()
-                    {
+                    builder.setItems(strArray, new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialog, int which)
-                        {
+                        public void onClick(DialogInterface dialog, int which) {
                             tv2.setText(strArray[which]);
                         }
                     });
@@ -557,10 +545,10 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             });
             LinearLayout.LayoutParams iv1Params = new LinearLayout.LayoutParams(ivwidth, ivheight);
             iv1Params.weight = 0;
-            iv1Params.setMargins(0,ivmargintop,ivmarginright,ivmarginbottom);
-            root.addView(iv1,iv1Params);
-            mainlinearlayout.addView(root,rootParams);
-        }else if("radios".equals(leipiplugins)){
+            iv1Params.setMargins(0, ivmargintop, ivmarginright, ivmarginbottom);
+            root.addView(iv1, iv1Params);
+            mainlinearlayout.addView(root, rootParams);
+        } else if ("radios".equals(leipiplugins)) {
             LinearLayout root = new LinearLayout(this);
             root.setOrientation(LinearLayout.HORIZONTAL);
             root.setBackgroundColor(Color.WHITE);
@@ -571,33 +559,29 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             tv1.setId(View.generateViewId());
             final String title = databean.getTitle();
             String regex = "[\u4e00-\u9fff]";
-            int count = (" " + title + " ").split (regex).length - 1;
+            int count = (" " + title + " ").split(regex).length - 1;
             int tvwidth = count * 34;
             int tempwidth = 136 - tvwidth;
-            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX,tvsize);
+            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, tvsize);
             tv1.setText(databean.getTitle());
             LinearLayout.LayoutParams tv1Params = new LinearLayout.LayoutParams(tvwidth, tvheight);
-            tv1Params.setMargins(firstmarginleftwidth,firstmargintopwidth,firstmarginrightwidth+tempwidth,firstmarginbottomwidth);
+            tv1Params.setMargins(firstmarginleftwidth, firstmargintopwidth, firstmarginrightwidth + tempwidth, firstmarginbottomwidth);
             tv1Params.weight = 0;
-            root.addView(tv1,tv1Params);
+            root.addView(tv1, tv1Params);
 
             final TextView tv2 = new TextView(this);
             tv2.setId(View.generateViewId());
 
-            tv2.setOnClickListener(new View.OnClickListener()
-            {
+            tv2.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View arg0)
-                {
+                public void onClick(View arg0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setTitle(title);
                     //    设置一个下拉的列表选择项
                     final String[] strArray = databean.getValue().split(",");
-                    builder.setSingleChoiceItems(strArray,0, new DialogInterface.OnClickListener()
-                    {
+                    builder.setSingleChoiceItems(strArray, 0, new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialog, int which)
-                        {
+                        public void onClick(DialogInterface dialog, int which) {
                             tv2.setText(strArray[which]);
                             dialog.dismiss();
                         }
@@ -607,30 +591,26 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             });
             String value = tv2.getText().toString();
             String tv2regex = "[\u4e00-\u9fff]";
-            int tv2count = (" " + value + " ").split (regex).length - 1;
+            int tv2count = (" " + value + " ").split(regex).length - 1;
             int tv2width = count * 34;
-            tv2.setTextSize(TypedValue.COMPLEX_UNIT_PX,tvsize);
+            tv2.setTextSize(TypedValue.COMPLEX_UNIT_PX, tvsize);
             LinearLayout.LayoutParams tv2Params = new LinearLayout.LayoutParams(tv2width, tvheight);
             tv2Params.weight = 1;
-            tv2Params.setMargins(0,firstmargintopwidth,0,firstmarginbottomwidth);
-            root.addView(tv2,tv2Params);
+            tv2Params.setMargins(0, firstmargintopwidth, 0, firstmarginbottomwidth);
+            root.addView(tv2, tv2Params);
 
             ImageView iv1 = new ImageView(this);
             iv1.setImageResource(R.drawable.hevron);
-            iv1.setOnClickListener(new View.OnClickListener()
-            {
+            iv1.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View arg0)
-                {
+                public void onClick(View arg0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setTitle(title);
                     //    设置一个下拉的列表选择项
                     final String[] strArray = databean.getValue().split(",");
-                    builder.setSingleChoiceItems(strArray,0, new DialogInterface.OnClickListener()
-                    {
+                    builder.setSingleChoiceItems(strArray, 0, new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialog, int which)
-                        {
+                        public void onClick(DialogInterface dialog, int which) {
                             tv2.setText(strArray[which]);
                             dialog.dismiss();
                         }
@@ -640,10 +620,10 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             });
             LinearLayout.LayoutParams iv1Params = new LinearLayout.LayoutParams(ivwidth, ivheight);
             iv1Params.weight = 0;
-            iv1Params.setMargins(0,ivmargintop,ivmarginright,ivmarginbottom);
-            root.addView(iv1,iv1Params);
-            mainlinearlayout.addView(root,rootParams);
-        }else if("checkboxs".equals(leipiplugins)){
+            iv1Params.setMargins(0, ivmargintop, ivmarginright, ivmarginbottom);
+            root.addView(iv1, iv1Params);
+            mainlinearlayout.addView(root, rootParams);
+        } else if ("checkboxs".equals(leipiplugins)) {
             LinearLayout root = new LinearLayout(this);
             root.setOrientation(LinearLayout.VERTICAL);
             root.setBackgroundColor(Color.WHITE);
@@ -660,15 +640,15 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             tv1.setId(View.generateViewId());
             String title = databean.getTitle();
             String regex = "[\u4e00-\u9fff]";
-            int count = (" " + title + " ").split (regex).length - 1;
+            int count = (" " + title + " ").split(regex).length - 1;
             int tvwidth = count * 28;
             int tempgwidth = 720 - tvwidth;
-            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX,28);
+            tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, 28);
             tv1.setText(databean.getTitle());
             LinearLayout.LayoutParams tv1Params = new LinearLayout.LayoutParams(tvwidth, 40);
-            tv1Params.setMargins(30,30,tempgwidth,16);
-            tvroot.addView(tv1,tv1Params);
-            root.addView(tvroot,tvrootParams);
+            tv1Params.setMargins(30, 30, tempgwidth, 16);
+            tvroot.addView(tv1, tv1Params);
+            root.addView(tvroot, tvrootParams);
 
             final String[] strArray = databean.getValue().split(",");
             LinearLayout checkbox = new LinearLayout(this);
@@ -676,7 +656,7 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
             checkbox.setBackgroundColor(Color.WHITE);
             LinearLayout.LayoutParams checkboxParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             checkbox.setLayoutParams(checkboxParams);
-            for (int i = 0; i < databean.getOptionBeanList().size(); i++){
+            for (int i = 0; i < databean.getOptionBeanList().size(); i++) {
                 LinearLayout checkboxitem = new LinearLayout(this);
                 checkboxitem.setOrientation(LinearLayout.HORIZONTAL);
                 checkboxitem.setBackgroundColor(Color.WHITE);
@@ -685,136 +665,152 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
 
                 final ImageView iv1 = new ImageView(MainActivity.this);
                 iv1.setId(View.generateViewId());
-                if(0 == i){
+                if (0 == i) {
                     iv1.setImageResource(R.drawable.checked);
-                }else {
+                } else {
                     iv1.setImageResource(R.drawable.fill);
                 }
-                iv1.setOnClickListener(new View.OnClickListener()
-                {
+                iv1.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View arg0)
-                    {
+                    public void onClick(View arg0) {
                         ImageView iv0 = (ImageView) findViewById(arg0.getId());
                         ImageView tempiv = new ImageView(MainActivity.this);
                         tempiv.setImageResource(R.drawable.checked);
-                        if(iv0.getDrawable().getCurrent().getConstantState().equals(getResources().getDrawable(R.drawable.checked).getConstantState())){
+                        if (iv0.getDrawable().getCurrent().getConstantState().equals(getResources().getDrawable(R.drawable.checked).getConstantState())) {
                             iv0.setImageResource(R.drawable.fill);
-                        }else{
+                        } else {
                             iv0.setImageResource(R.drawable.checked);
                         }
                     }
                 });
                 LinearLayout.LayoutParams iv1Params = new LinearLayout.LayoutParams(46, 46);
-                iv1Params.setMargins(30,20,20,20);
-                checkboxitem.addView(iv1,iv1Params);
+                iv1Params.setMargins(30, 20, 20, 20);
+                checkboxitem.addView(iv1, iv1Params);
 
 
                 TextView tv2 = new TextView(this);
                 tv2.setId(View.generateViewId());
                 tv2.setText(strArray[i]);
                 String tv2title = tv2.getText().toString();
-                int tv2count = (" " + title + " ").split (regex).length - 1;
+                int tv2count = (" " + title + " ").split(regex).length - 1;
                 int tv2width = count * 34;
                 int tempwidth = 654 - tvwidth;
-                tv2.setTextSize(TypedValue.COMPLEX_UNIT_PX,tvsize);
+                tv2.setTextSize(TypedValue.COMPLEX_UNIT_PX, tvsize);
                 LinearLayout.LayoutParams tv2Params = new LinearLayout.LayoutParams(tvwidth, tvheight);
-                tv2Params.setMargins(0,20,tempwidth,20);
-                checkboxitem.addView(tv2,tv2Params);
+                tv2Params.setMargins(0, 20, tempwidth, 20);
+                checkboxitem.addView(tv2, tv2Params);
 
-                checkbox.addView(checkboxitem,checkboxitemParams);
+                checkbox.addView(checkboxitem, checkboxitemParams);
             }
-            root.addView(checkbox,checkboxParams);
-            mainlinearlayout.addView(root,rootParams);
+            root.addView(checkbox, checkboxParams);
+            mainlinearlayout.addView(root, rootParams);
         }
 
     }
 
-    public int creatAddfile(String path,String type,String name,String size){
+    public int creatAddfile(String path, String type, String name, String size) {
+        fileupload = (LinearLayout) findViewById(R.id.fileupload);
         int flag = 0;
-        LinearLayout root = new LinearLayout(this);
+        final LinearLayout root = new LinearLayout(this);
         root.setOrientation(LinearLayout.HORIZONTAL);
         root.setBackgroundColor(Color.parseColor("#CCCCCC"));
-        LinearLayout.LayoutParams rootParams = new LinearLayout.LayoutParams(690, 116);
-        rootParams.setMargins(30,30,30,0);
+        final LinearLayout.LayoutParams rootParams = new LinearLayout.LayoutParams(690, 116);
+        rootParams.setMargins(30, 30, 30, 0);
         root.setLayoutParams(rootParams);
 
         TextView tv1 = new TextView(MainActivity.this);
         tv1.setId(View.generateViewId());
         String Uptype = type.toUpperCase();
-        System.out.println("----------"+Uptype);
+        System.out.println("----------" + Uptype);
         tv1.setText(Uptype);
         int count = 0;
-        for(int i=0;i<Uptype.length();i++){
-            char cs =Uptype.charAt(i);
-            if(((cs>='A'&& cs<='Z'))){
+        for (int i = 0; i < Uptype.length(); i++) {
+            char cs = Uptype.charAt(i);
+            if (((cs >= 'A' && cs <= 'Z'))) {
                 count++;
             }
         }
-        int tv1width = count * 32;
+        Paint pFont = new Paint();
+        Rect rect = new Rect();
+        pFont.getTextBounds(Uptype, 0, 1, rect);
+        int uptypewidth = rect.width();
+        TextPaint textPaint = tv1.getPaint();
+        float textPaintWidth = textPaint.measureText(Uptype);
+        System.out.println(textPaintWidth + "ddddddddddddddd");
+        int tv1width = (int) textPaintWidth;
         tv1.setTextColor(Color.parseColor("#FFFFFF"));
-        tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX,48);
-        LinearLayout.LayoutParams tv1Params = new LinearLayout.LayoutParams(tv1width, 67);
-        tv1Params.setMargins(14,4,14,4);
+        tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, 48);
+        LinearLayout.LayoutParams tv1Params = new LinearLayout.LayoutParams(tv1width - 12, 67);
+        tv1Params.setMargins(14, 4, 14, 4);
 
 
         LinearLayout tvroot = new LinearLayout(this);
         tvroot.setOrientation(LinearLayout.VERTICAL);
         tvroot.setBackgroundColor(Color.parseColor("#009760"));
-        LinearLayout.LayoutParams tvrootParams = new LinearLayout.LayoutParams(tv1width+30, 76);
-        tvrootParams.setMargins(32,20,20,20);
+        LinearLayout.LayoutParams tvrootParams = new LinearLayout.LayoutParams(tv1width + 17, 76);
+        tvrootParams.setMargins(32, 20, 20, 20);
+        tvrootParams.weight = 1;
         tvroot.setLayoutParams(tvrootParams);
-        tvroot.addView(tv1,tv1Params);
-        root.addView(tvroot,tvrootParams);
+        tvroot.addView(tv1, tv1Params);
+        root.addView(tvroot, tvrootParams);
 
 
         LinearLayout tv2root = new LinearLayout(this);
         tv2root.setOrientation(LinearLayout.VERTICAL);
         LinearLayout.LayoutParams tv2rootParams = new LinearLayout.LayoutParams(400, 88);
-        tv2rootParams.setMargins(0,15,15,34);
+        tv2rootParams.setMargins(0, 15, 15, 34);
+        tv2rootParams.weight = 1;
         tv2root.setLayoutParams(tv2rootParams);
 
         TextView tv2 = new TextView(this);
         tv2.setId(View.generateViewId());
-        Paint pFont = new Paint();
-        Rect rect = new Rect();
-        pFont.getTextBounds(name, 0, 1, rect);
-        int namewidth = rect.width();
+        Paint pFont1 = new Paint();
+        Rect rect1 = new Rect();
+        pFont1.getTextBounds(name, 0, 1, rect);
+        int namewidth = rect1.width();
         LinearLayout.LayoutParams tv2Params;
-        if(namewidth>340){
+        if (namewidth > 340) {
             tv2Params = new LinearLayout.LayoutParams(400, 48);
-        }else{
+        } else {
             tv2Params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, 48);
         }
         tv2.setSingleLine(true);
         tv2.setEllipsize(TextUtils.TruncateAt.valueOf("END"));
         tv2.setTextColor(Color.parseColor("#000000"));
-        tv2.setTextSize(TypedValue.COMPLEX_UNIT_PX,34);
+        tv2.setTextSize(TypedValue.COMPLEX_UNIT_PX, 34);
         tv2.setText(name);
-        tv2Params.setMargins(0,0,0,3);
-        tv2root.addView(tv2,tv2Params);
+        tv2Params.setMargins(0, 0, 0, 3);
+        tv2root.addView(tv2, tv2Params);
 
         TextView tv3 = new TextView(this);
         tv3.setId(View.generateViewId());
         int tv3width = count * 31;
         tv3.setSingleLine(true);
         tv3.setTextColor(Color.parseColor("#888888"));
-        tv3.setTextSize(TypedValue.COMPLEX_UNIT_PX,26);
-        tv3.setText(Uptype+" "+size);
+        tv3.setTextSize(TypedValue.COMPLEX_UNIT_PX, 26);
+        tv3.setText(Uptype + " " + size);
         LinearLayout.LayoutParams tv3Params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, 37);
-        tv3Params.setMargins(0,0,0,0);
-        tv2root.addView(tv3,tv3Params);
-        root.addView(tv2root,tv2rootParams);
+        tv3Params.setMargins(0, 0, 0, 0);
+        tv2root.addView(tv3, tv3Params);
+        root.addView(tv2root, tv2rootParams);
 
-        ImageView iv = new ImageView(this);
-        //iv.setOnClickListener(removeiv);
+        final ImageView iv = new ImageView(this);
+        iv.setId(View.generateViewId());
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+                System.out.println("00000000000000");
+                fileupload.removeView(root);
+            }
+        });
         iv.setImageResource(R.drawable.z);
         LinearLayout.LayoutParams ivParams = new LinearLayout.LayoutParams(50, 50);
-        ivParams.setMargins(0,33,30,33);
-        root.addView(iv,ivParams);
+        ivParams.setMargins(0, 33, 30, 33);
+        ivParams.weight = 0;
+        root.addView(iv, ivParams);
 
-        LinearLayout fileupload = (LinearLayout)findViewById(R.id.fileupload);
-        fileupload.addView(root,rootParams);
+        fileupload = (LinearLayout) findViewById(R.id.fileupload);
+        fileupload.addView(root, rootParams);
         flag = 1;
         return flag;
     }
@@ -837,20 +833,20 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
     public String getExtensionName(String filename) {
         if ((filename != null) && (filename.length() > 0)) {
             int dot = filename.lastIndexOf('.');
-            if ((dot >-1) && (dot < (filename.length() - 1))) {
+            if ((dot > -1) && (dot < (filename.length() - 1))) {
                 return filename.substring(dot + 1);
             }
         }
         return filename;
     }
 
-    public String getFileName(String pathandname){
+    public String getFileName(String pathandname) {
 
-        int start=pathandname.lastIndexOf("/");
-        int end=pathandname.lastIndexOf(".");
-        if(start!=-1 && end!=-1){
-            return pathandname.substring(start+1,end);
-        }else{
+        int start = pathandname.lastIndexOf("/");
+        int end = pathandname.lastIndexOf(".");
+        if (start != -1 && end != -1) {
+            return pathandname.substring(start + 1, end);
+        } else {
             return null;
         }
     }
