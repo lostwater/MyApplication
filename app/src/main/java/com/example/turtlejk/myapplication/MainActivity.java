@@ -799,7 +799,6 @@ public class MainActivity extends AppCompatActivity implements ImagePickerAdapte
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
-                System.out.println("00000000000000");
                 fileupload.removeView(root);
             }
         });
